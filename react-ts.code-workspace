@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Test/test-PrismaMedia/test-prismamedia"
+		}
+	],
+    "settings": {}
+}
