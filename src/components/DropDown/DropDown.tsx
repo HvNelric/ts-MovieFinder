@@ -41,7 +41,7 @@ const DropDown: React.FC<DropDownProps> = ({ classTag, title, array, fnSetter, s
                 className={`dropdown__menu ${open ? "active" : ""}`}
                 onClick={openDropdown}
             >
-                {title}
+                {title}  
             </div>
             {open && (
                 <ul className="dropdown__content">
@@ -62,3 +62,4 @@ const DropDown: React.FC<DropDownProps> = ({ classTag, title, array, fnSetter, s
 };
 
 export default DropDown;
+// test git branch dev
