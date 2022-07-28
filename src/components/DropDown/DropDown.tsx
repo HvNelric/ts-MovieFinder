@@ -21,8 +21,10 @@ const DropDown: React.FC<DropDownProps> = ({ classTag, title, array, fnSetter, s
     };
 
     const handleClick = (e: React.MouseEvent<HTMLLIElement>) => {
-		let newStateObj: any = { ...stateObj };
-		newStateObj[stateValue] = (e.target as HTMLElement).getAttribute("data-id");
+        let newStateObj: Filter = { ...stateObj };
+
+        (newStateObj[stateValue] as string | null) = (e.target as HTMLElement).getAttribute("data-id");
+		
 		fnSetter(newStateObj);
 		setOpen(!open);
 		if (dropdownMenu.current) {

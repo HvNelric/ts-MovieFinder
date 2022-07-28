@@ -31,5 +31,6 @@ export interface Genres {
 export interface Filter {
     order: string;
     triGenre: string;
-    triYear: string
+    triYear: string;
+    [key: string]: string
 }
