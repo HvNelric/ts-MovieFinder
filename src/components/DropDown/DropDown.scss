@@ -1,0 +1,79 @@
+/** DROPDOWN *******************************/
+.allmovies__filter-input-group {
+    display: flex;
+    align-items: center;
+
+    .dropdown__container {
+        position: relative;
+        margin-left: 10px;
+
+        &.order {
+            width: 195px;
+        }
+
+        &.genres,
+        &.year {
+            width: 120px;
+        }
+
+        .dropdown__menu {
+            font-family: "roboto regular";
+            font-size: 12px;
+            padding: 10px 20px;
+            border-radius: 14px;
+            background: transparent;
+            border: 1px solid var(--grey);
+            color: var(--grey);
+            cursor: pointer;
+
+            &::after {
+                content: "";
+                height: 36px;
+                width: 36px;
+                background: url("../../icons/dropdownarrow.svg") center center no-repeat;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            &.active {
+                border-radius: 14px 14px 0 0;
+                background: #142e5b;
+            }
+
+            &:hover {
+                color: white;
+                background: #142e5b;
+            }
+        }
+
+        .dropdown__content {
+            font-family: "roboto regular";
+            font-size: 12px;
+            border-radius: 0 0 14px 14px;
+            border: 1px solid var(--grey);
+            color: var(--grey);
+            background: #142e5b;
+            position: absolute;
+            top: 35px;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+            max-height: 246px;
+            overflow-y: auto;
+
+            li {
+                padding: 10px 20px;
+                cursor: pointer;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid var(--grey);
+                }
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+}

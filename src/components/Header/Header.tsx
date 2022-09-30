@@ -2,6 +2,7 @@ import React, { useContext, useRef, useState } from "react";
 import { SearchContext } from "../../context/SearchContext/SearchContext";
 import logoMF from "../../icons/logo.svg";
 import svgSearch from "../../icons/searchicon.svg";
+import './header.scss'
 
 const Header = () => {
 

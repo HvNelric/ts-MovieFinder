@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { Filter, Genres, Movies } from '../../Types/Types';
+import './DropDown.scss';
 
 interface DropDownProps {
     classTag: string;
